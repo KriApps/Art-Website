@@ -13,13 +13,38 @@
     <p>This is my page about Art</p>
     
     <div id="options-block">
-        <button class=""></button>
+        <button id = "modernbut" class="art-type">Modern</button>
+
+        <button id = "abtractbut" class="art-type">Abstract</button>
+
+        <button id = "realbut" class="art-type">Realism</button>
+
+        <button id = "surrealbut" class="art-type">Surrealism</button>
     </div>
 
+    <div id="display-info">
+        <h2 id="art-title"></h2>
+        <p id="art-info"></p>
+
+    </div>
     <script>
-        let x
-        x = 5
-        console.log(X)
+        
+
+        for (i = 0;i<11;i++){
+            if (i%2 ===0){
+                console.log(i)
+            }
+
+        }
+
+        function displayinfo(artType){
+            document.getElementById("art-title").innerHTML = `${artType}`
+        }
+        
+
+
+
+
     </script>
 </body>
 </html>
